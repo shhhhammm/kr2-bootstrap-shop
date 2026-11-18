@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Учебный магазин компьютерной периферии ShopProject на Bootstrap.">
   <title>Беспроводная мышь — ShopProject</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
@@ -68,7 +68,7 @@
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
       <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Беспроводная мышь</li>
+      <li id="product-breadcrumb" class="breadcrumb-item active" aria-current="page">Беспроводная мышь</li>
     </ol>
   </nav>
 
@@ -82,16 +82,16 @@
     </div>
 
     <div class="col-12 col-lg-6">
-      <span class="badge bg-success mb-3">Новинка</span>
-      <h1 class="h2">Беспроводная мышь</h1>
-      <p class="lead text-muted">
+      <span id="product-badge" class="badge bg-success mb-3">Новинка</span>
+      <h1 id="product-title" class="h2">Беспроводная мышь</h1>
+      <p id="product-description" class="lead text-muted">
         Беспроводная мышь с тихими кнопками, тремя режимами чувствительности и USB-приёмником для ноутбука.
       </p>
 
-      <p class="fs-3 fw-bold">1000 руб.</p>
+      <p id="product-price" class="fs-3 fw-bold">1000 руб.</p>
 
       <div class="d-flex flex-wrap gap-2 mb-4">
-        <a class="btn btn-primary btn-lg" href="order.html">
+        <a class="btn btn-primary btn-lg" id="product-order" href="order.html?product=mouse">
           Оформить заявку
         </a>
         <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
@@ -113,11 +113,11 @@
         <tbody>
           <tr>
             <th scope="row">Категория</th>
-            <td>Учебные товары</td>
+            <td id="product-category">Периферия</td>
           </tr>
           <tr>
             <th scope="row">Цена</th>
-            <td>1000 руб.</td>
+            <td id="product-table-price">1000 руб.</td>
           </tr>
           <tr>
             <th scope="row">Наличие</th>
@@ -202,7 +202,8 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/forms.js"></script>
+<script src="js/products.js"></script>
 </body>
 </html>

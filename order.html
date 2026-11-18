@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Учебный магазин компьютерной периферии ShopProject на Bootstrap.">
   <title>Заявка — ShopProject</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
@@ -100,9 +100,9 @@
                 <label for="order-product" class="form-label">Товар</label>
                 <select id="order-product" name="product" class="form-select">
                   <option selected>Выберите товар</option>
-                  <option value="product-1">Беспроводная мышь</option>
-                  <option value="product-2">Компактная клавиатура</option>
-                  <option value="product-3">Наушники с микрофоном</option>
+                  <option value="mouse">Беспроводная мышь</option>
+                  <option value="keyboard">Компактная клавиатура</option>
+                  <option value="headphones">Наушники с микрофоном</option>
                 </select>
               </div>
 
@@ -156,7 +156,8 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/forms.js"></script>
+<script src="js/products.js"></script>
 </body>
 </html>
