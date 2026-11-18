@@ -5,3 +5,11 @@ body {
 .placeholder-box {
   min-height: 240px;
 }
+
+.placeholder-image {
+  min-height: 320px;
+}
+
+.card-title {
+  line-height: 1.3;
+}
