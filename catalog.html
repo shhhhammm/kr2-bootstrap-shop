@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Учебный магазин компьютерной периферии ShopProject на Bootstrap.">
   <title>Каталог — ShopProject</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
@@ -91,12 +91,12 @@
       <p class="fw-bold fs-5 mt-auto">1000 руб.</p>
 
       <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary" href="product.html">Подробнее</a>
+        <a class="btn btn-primary" href="product.html?product=mouse">Подробнее</a>
         <button
           class="btn btn-outline-primary"
           type="button"
           data-bs-toggle="modal"
-          data-bs-target="#orderModal"
+          data-bs-target="#orderModal" data-product="mouse"
         >
           Заказать
         </button>
@@ -120,12 +120,12 @@
       <p class="fw-bold fs-5 mt-auto">1500 руб.</p>
 
       <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary" href="product.html">Подробнее</a>
+        <a class="btn btn-primary" href="product.html?product=keyboard">Подробнее</a>
         <button
           class="btn btn-outline-primary"
           type="button"
           data-bs-toggle="modal"
-          data-bs-target="#orderModal"
+          data-bs-target="#orderModal" data-product="keyboard"
         >
           Заказать
         </button>
@@ -149,12 +149,12 @@
       <p class="fw-bold fs-5 mt-auto">2000 руб.</p>
 
       <div class="d-flex flex-wrap gap-2">
-        <a class="btn btn-primary" href="product.html">Подробнее</a>
+        <a class="btn btn-primary" href="product.html?product=headphones">Подробнее</a>
         <button
           class="btn btn-outline-primary"
           type="button"
           data-bs-toggle="modal"
-          data-bs-target="#orderModal"
+          data-bs-target="#orderModal" data-product="headphones"
         >
           Заказать
         </button>
@@ -210,6 +210,7 @@
           Учебная форма: данные никуда не отправляются. Поля обязательны.
         </p>
 
+        <p id="quick-product" class="fw-semibold"></p>
         <form id="quick-order" data-demo-form>
           <div class="mb-3">
             <label for="modal-name" class="form-label">Имя</label>
@@ -241,7 +242,8 @@
     </div>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/forms.js"></script>
+<script src="js/products.js"></script>
 </body>
 </html>

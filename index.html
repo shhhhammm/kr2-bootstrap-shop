@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Учебный магазин компьютерной периферии ShopProject на Bootstrap.">
   <title>Главная — ShopProject</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
@@ -139,7 +139,7 @@
     </div>
   </div>
 </section>
-<section class="container my-5">
+<section id="popular" class="container my-5">
   <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center mb-4">
     <h2 class="mb-0">Популярные товары</h2>
     <a class="btn btn-outline-primary" href="catalog.html">
@@ -156,7 +156,7 @@
           Аксессуары для удобной работы за компьютером.
         </p>
         <p class="fw-bold mb-3">1000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
+        <a class="btn btn-primary" href="product.html?product=mouse">
           Подробнее
         </a>
       </div>
@@ -170,7 +170,7 @@
           Аксессуары для удобной работы за компьютером.
         </p>
         <p class="fw-bold mb-3">1500 руб.</p>
-        <a class="btn btn-primary" href="product.html">
+        <a class="btn btn-primary" href="product.html?product=keyboard">
           Подробнее
         </a>
       </div>
@@ -184,7 +184,7 @@
           Аксессуары для удобной работы за компьютером.
         </p>
         <p class="fw-bold mb-3">2000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
+        <a class="btn btn-primary" href="product.html?product=headphones">
           Подробнее
         </a>
       </div>
@@ -212,6 +212,7 @@
     </div>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/products.js"></script>
 </body>
 </html>
